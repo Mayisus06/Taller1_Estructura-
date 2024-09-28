@@ -137,6 +137,10 @@
     <ClInclude Include="Juego.h" />
     <ClInclude Include="Tablero.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Desktop\estructura24\taller 1 Estruct\escenarios.txt" />
+    <Text Include="..\..\..\..\Desktop\estructura24\taller 1 Estruct\fichas.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

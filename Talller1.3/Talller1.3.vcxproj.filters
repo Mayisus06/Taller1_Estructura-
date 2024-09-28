@@ -39,4 +39,12 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Desktop\estructura24\taller 1 Estruct\fichas.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+    <Text Include="..\..\..\..\Desktop\estructura24\taller 1 Estruct\escenarios.txt">
+      <Filter>Archivos de encabezado</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
