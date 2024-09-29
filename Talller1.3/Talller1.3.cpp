@@ -26,8 +26,8 @@ int main() {
             break;
         }
         case 2: {
-            juego.cargarEscenario("escenario1.txt", juego.getJugador());
-            juego.cargarEscenario("escenario1.txt", juego.getEnemigo());
+            juego.cargarEscenario("escenarios.txt", juego.getJugador());
+            juego.cargarEscenario("escenarios.txt", juego.getEnemigo());
             std::cout << "Escenario cargado exitosamente." << std::endl;
             break;
         }

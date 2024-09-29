@@ -1,6 +1,3 @@
-#ifndef FICHA_H
-#define FICHA_H
-
 #include <string>
 
 class Ficha {
@@ -21,5 +18,3 @@ public:
     void recibirDano(int dano);
     bool estaDesmayada() const;
 };
-
-#endif

@@ -1,6 +1,3 @@
-#ifndef TABLERO_H
-#define TABLERO_H
-
 #include <vector>
 #include "Ficha.h"
 
@@ -17,5 +14,3 @@ public:
     Ficha* obtenerFicha(int fila, int columna) const;
     void mostrarTablero() const;
 };
-
-#endif

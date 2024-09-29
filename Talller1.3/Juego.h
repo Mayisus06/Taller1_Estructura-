@@ -1,6 +1,3 @@
-#ifndef JUEGO_H
-#define JUEGO_H
-
 #include "Tablero.h"
 #include <string>
 #include <map>
@@ -22,5 +19,3 @@ public:
     Tablero* getJugador() const;
     Tablero* getEnemigo() const;
 };
-
-#endif
