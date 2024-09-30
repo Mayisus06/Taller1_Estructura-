@@ -21,10 +21,10 @@
     <ClCompile Include="Ficha.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Tablero.cpp">
+    <ClCompile Include="Escenario.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Juego.cpp">
+    <ClCompile Include="Utilidades.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,10 @@
     <ClInclude Include="Ficha.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Tablero.h">
+    <ClInclude Include="Escenario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Juego.h">
+    <ClInclude Include="Utilidades.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

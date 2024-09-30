@@ -1,32 +1,36 @@
 #include "Ficha.h"
 
-Ficha::Ficha(const std::string& tipo, int hp, int atk, int def, int rango)
-    : tipo(tipo), hp(hp), atk(atk), def(def), rango(rango) {}
 
+// Constructor de la clase Ficha
+Ficha::Ficha(const std::string& tipo, int vida, int ataque, int defensa, int nivel)
+    : tipo(tipo), vida(vida), ataque(ataque), defensa(defensa), nivel(nivel) {}
+
+
+// Método para obtener el tipo de la ficha
 std::string Ficha::getTipo() const {
     return tipo;
 }
-
-int Ficha::getHP() const {
-    return hp;
+// Método para obtener los puntos de vida de la ficha
+int Ficha::getVida() const {
+    return vida;
+}
+// Método para obtener los puntos de ataque de la ficha
+int Ficha::getAtaque() const {
+    return ataque;
+}
+// Método para obtener los puntos de defensa de la ficha
+int Ficha::getDefensa() const {
+    return defensa;
+}
+// Método para obtener el nivel de la ficha
+int Ficha::getNivel() const {
+    return nivel;
+}
+// Funcion para establecer el tipo de la ficha
+void Ficha::setTipo(const std::string& tipo) {
+    this->tipo = tipo;
 }
 
-int Ficha::getAtk() const {
-    return atk;
-}
 
-int Ficha::getDef() const {
-    return def;
-}
 
-int Ficha::getRango() const {
-    return rango;
-}
-
-void Ficha::recibirDano(int dano) {
-    hp -= dano;
-}
-
-bool Ficha::estaDesmayada() const {
-    return hp <= 0;
-}
+//#include "Ficha.h" : hace que incluya el contenido del Ficha.h

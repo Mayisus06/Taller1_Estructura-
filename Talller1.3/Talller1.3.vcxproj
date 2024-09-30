@@ -127,15 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Escenario.cpp" />
     <ClCompile Include="Ficha.cpp" />
-    <ClCompile Include="Juego.cpp" />
-    <ClCompile Include="Tablero.cpp" />
     <ClCompile Include="Talller1.3.cpp" />
+    <ClCompile Include="Utilidades.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Escenario.h" />
     <ClInclude Include="Ficha.h" />
-    <ClInclude Include="Juego.h" />
-    <ClInclude Include="Tablero.h" />
+    <ClInclude Include="Utilidades.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\..\Desktop\estructura24\taller 1 Estruct\escenarios.txt" />
