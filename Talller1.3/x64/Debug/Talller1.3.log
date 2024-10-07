@@ -1,18 +1,2 @@
-﻿  Escenario.cpp
-  Ficha.cpp
-  Talller1.3.cpp
-C:\Users\mario\source\repos\Talller1.3\Talller1.3\Ficha.h(4,7): error C2011: 'Ficha': nueva definición del tipo 'class'
-  (compilando archivo de origen "Talller1.3.cpp")
-      C:\Users\mario\source\repos\Talller1.3\Talller1.3\Ficha.h(4,7):
-      vea la declaración de 'Ficha'
-  
-C:\Users\mario\source\repos\Talller1.3\Talller1.3\Talller1.3.cpp(80,29): error C2027: uso del tipo 'Ficha' sin definir
-      C:\Users\mario\source\repos\Talller1.3\Talller1.3\Ficha.h(4,7):
-      vea la declaración de 'Ficha'
-  
-C:\Users\mario\source\repos\Talller1.3\Talller1.3\Talller1.3.cpp(112,38): error C2027: uso del tipo 'Ficha' sin definir
-      C:\Users\mario\source\repos\Talller1.3\Talller1.3\Ficha.h(4,7):
-      vea la declaración de 'Ficha'
-  
-  Utilidades.cpp
-  Generando código...
+﻿  Talller1.3.cpp
+  Talller1.3.vcxproj -> C:\Users\mario\Desktop\Taller_1\Taller1_GarnicaJean-ChuraCristhian-main\x64\Debug\Talller1.3.exe

@@ -24,9 +24,6 @@
     <ClCompile Include="Escenario.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Utilidades.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ficha.h">
@@ -35,7 +32,10 @@
     <ClInclude Include="Escenario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Utilidades.h">
+    <ClInclude Include="Nodo.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaNexoSimple.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

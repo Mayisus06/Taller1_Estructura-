@@ -130,12 +130,12 @@
     <ClCompile Include="Escenario.cpp" />
     <ClCompile Include="Ficha.cpp" />
     <ClCompile Include="Talller1.3.cpp" />
-    <ClCompile Include="Utilidades.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Escenario.h" />
     <ClInclude Include="Ficha.h" />
-    <ClInclude Include="Utilidades.h" />
+    <ClInclude Include="ListaNexoSimple.h" />
+    <ClInclude Include="Nodo.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\..\Desktop\estructura24\taller 1 Estruct\escenarios.txt" />

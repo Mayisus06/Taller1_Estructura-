@@ -1,36 +1,60 @@
 #include "Ficha.h"
+#include <fstream>
+#include <iostream>
+#include <string>
 
+void Ficha::cargarFichas(const std::string& archivo) {
+    std::ifstream file(archivo);
+    if (!file) {
+        std::cerr << "Error al abrir el archivo de fichas." << std::endl;
+        return;
+    }
 
-// Constructor de la clase Ficha
-Ficha::Ficha(const std::string& tipo, int vida, int ataque, int defensa, int nivel)
-    : tipo(tipo), vida(vida), ataque(ataque), defensa(defensa), nivel(nivel) {}
-
-
-// Método para obtener el tipo de la ficha
-std::string Ficha::getTipo() const {
-    return tipo;
-}
-// Método para obtener los puntos de vida de la ficha
-int Ficha::getVida() const {
-    return vida;
-}
-// Método para obtener los puntos de ataque de la ficha
-int Ficha::getAtaque() const {
-    return ataque;
-}
-// Método para obtener los puntos de defensa de la ficha
-int Ficha::getDefensa() const {
-    return defensa;
-}
-// Método para obtener el nivel de la ficha
-int Ficha::getNivel() const {
-    return nivel;
-}
-// Funcion para establecer el tipo de la ficha
-void Ficha::setTipo(const std::string& tipo) {
-    this->tipo = tipo;
+    std::string linea;
+    while (std::getline(file, linea)) {
+        listaFichas.insertar(linea);
+    }
+    file.close();
 }
 
+void Ficha::mostrarFichas() {
+    listaFichas.mostrar();
+}
+
+void Ficha::cambiarFichaEquipo(const std::string& ficha, const std::string& nuevoEquipo) {
+    Nodo<std::string>* actual = listaFichas.cabeza;
+    while (actual != nullptr) {
+        // Extraer el nombre de la ficha antes de la coma
+        std::string nombreFicha = actual->dato.substr(0, actual->dato.find(','));
+
+        // Comparar solo el nombre
+        if (nombreFicha == ficha) {
+            // Aquí deberías modificar el equipo en la ficha
+            std::string nuevaFicha = nombreFicha + "," + nuevoEquipo;  // Este es un ejemplo, ajusta si es necesario
+            actual->dato = nuevaFicha;
+            std::cout << "Ficha " << ficha << " cambiada al equipo " << nuevoEquipo << std::endl;
+            return;
+        }
+        actual = actual->siguiente;
+    }
+    std::cout << "Ficha no encontrada" << std::endl;
+}
+
+void Ficha::cambiarPosicionFicha(const std::string& ficha, int nuevaFila, int nuevaColumna) {
+    Nodo<std::string>* actual = listaFichas.cabeza;
+    while (actual != nullptr) {
+        // Extraer el nombre de la ficha antes de la coma
+        std::string nombreFicha = actual->dato.substr(0, actual->dato.find(','));
+
+        // Comparar solo el nombre
+        if (nombreFicha == ficha) {
+            // Aquí deberías implementar la lógica para cambiar la posición
+            std::cout << "Ficha " << ficha << " movida a Fila: " << nuevaFila << ", Columna: " << nuevaColumna << std::endl;
+            return;
+        }
+        actual = actual->siguiente;
+    }
+    std::cout << "Ficha no encontrada" << std::endl;
+}
 
 
-//#include "Ficha.h" : hace que incluya el contenido del Ficha.h

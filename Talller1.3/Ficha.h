@@ -1,34 +1,17 @@
+#include "ListaNexoSimple.h"
 #include <string>
+#include <map>
 
-//Definimos la clase Ficha
 class Ficha {
- //Especifica que los siguientes miembros son privados
 private:
-    std::string tipo;  // Tipo de la ficha (por ejemplo, 'Arquero', 'Mago', etc.)
-    int vida;          // Puntos de vida de la ficha
-    int ataque;        // Puntos de ataque de la ficha
-    int defensa;       // Puntos de defensa de la ficha
-    int nivel;         // Nivel de la ficha
- //Especifica que los siguientes miembros son publico
+    ListaNexoSimple<std::string> listaFichas;
+    std::map<std::string, std::string> composiciones; // Para guardar composiciones
+
 public:
-    // Constructor de la clase Ficha
-    Ficha(const std::string& tipo, int vida, int ataque, int defensa, int nivel);
-    // Método para obtener el tipo de la ficha
-    std::string getTipo() const;
-    // Método para obtener los puntos de vida de la ficha
-    int getVida() const;
-    // Método para obtener los puntos de ataque de la ficha
-    int getAtaque() const;
-    // Método para obtener los puntos de defensa de la ficha
-    int getDefensa() const;
-    // Método para obtener el nivel de la ficha
-    int getNivel() const;
-    
-  
-    // Método para establecer el tipo de la ficha
-
-    void setTipo(const std::string& tipo);
+    void cargarFichas(const std::string& archivo);
+    void mostrarFichas();
+    void cambiarFichaEquipo(const std::string& ficha, const std::string& nuevoEquipo);
+    void cambiarPosicionFicha(const std::string& ficha, int nuevaFila, int nuevaColumna);
+    void guardarComposicion(const std::string& nombre);
+    void cargarComposicion(const std::string& nombre);
 };
-
-
-//#include <string> : nos permite la utilizacion para manejar cadenas de texto.
