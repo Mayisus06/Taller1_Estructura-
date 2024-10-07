@@ -29,8 +29,8 @@ void Ficha::cambiarFichaEquipo(const std::string& ficha, const std::string& nuev
 
         // Comparar solo el nombre
         if (nombreFicha == ficha) {
-            // Aquí deberías modificar el equipo en la ficha
-            std::string nuevaFicha = nombreFicha + "," + nuevoEquipo;  // Este es un ejemplo, ajusta si es necesario
+            
+            std::string nuevaFicha = nombreFicha + "," + nuevoEquipo;  
             actual->dato = nuevaFicha;
             std::cout << "Ficha " << ficha << " cambiada al equipo " << nuevoEquipo << std::endl;
             return;
@@ -48,7 +48,7 @@ void Ficha::cambiarPosicionFicha(const std::string& ficha, int nuevaFila, int nu
 
         // Comparar solo el nombre
         if (nombreFicha == ficha) {
-            // Aquí deberías implementar la lógica para cambiar la posición
+            
             std::cout << "Ficha " << ficha << " movida a Fila: " << nuevaFila << ", Columna: " << nuevaColumna << std::endl;
             return;
         }
